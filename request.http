@@ -6,5 +6,37 @@ content-type: application/json
     "description": "reading the books about the Go programming language Golang"
 }
 
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Learn Rust",
+    "description": "reading the books about the Rust programming language Rust"
+}
+
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Learn Javascript",
+    "description": "reading the books about the Javascript programming"
+}
 
 GET http://localhost:3000/tasks HTTP/1.1
+
+
+GET http://localhost:3000/tasks?status=OPEN HTTP/1.1
+
+
+GET http://localhost:3000/tasks/54aa3e23-ed75-42fd-ae57-8734f93e68b6 HTTP/1.1
+
+
+DELETE http://localhost:3000/tasks/c5402006-516d-467e-92c1-c1e3c3fb615a HTTP/1.1
+
+
+PATCH http://localhost:3000/tasks/629a159e-c108-46fc-9e4a-c65a6bf1e203/status HTTP/1.1
+content-type: application/json
+
+{
+    "status": "DONE"
+  }
