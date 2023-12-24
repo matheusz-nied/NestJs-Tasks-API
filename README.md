@@ -12,7 +12,6 @@ Este é o repositório do projeto desenvolvido durante o curso "NestJS Zero to H
 - **NestJS:** Framework back-end moderno e escalável para Node.js.
 - **TypeORM:** ORM (Object-Relational Mapping) para interação com bancos de dados.
 - **PostgreSQL:** Sistema de gerenciamento de banco de dados relacional.
-- **Amazon Web Services (AWS):** Plataforma de computação em nuvem.
 - **JWT (JSON Web Tokens):** Método para autenticação e compartilhamento seguro de informações.
 - **Postman:** Ferramenta para testar APIs.
 - **pgAdmin:** Interface de administração para PostgreSQL.
@@ -62,10 +61,4 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
-
-
-## Descrição do Projeto
-
-Este projeto é um exemplo prático do desenvolvimento de uma aplicação back-end utilizando as tecnologias mencionadas. Inclui a implementação de uma API RESTful, autenticação segura, interação com bancos de dados relacionais e NoSQL, além da implantação em um ambiente de produção. O código está organizado e segue as melhores práticas da indústria para garantir manutenibilidade e escalabilidade.
-
 
