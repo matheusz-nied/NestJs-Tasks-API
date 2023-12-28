@@ -25,17 +25,19 @@ content-type: application/json
 GET http://localhost:3000/tasks HTTP/1.1
 
 
-GET http://localhost:3000/tasks?status=OPEN HTTP/1.1
+GET http://localhost:3000/tasks?status=DONE HTTP/1.1
+
+GET http://localhost:3000/tasks?search=Go HTTP/1.1
 
 
-GET http://localhost:3000/tasks/72dfe0d6-713f-4f79-a8a0-8bf223f4c2cf HTTP/1.1
+GET http://localhost:3000/tasks/77fa8987-e3e6-4039-be2e-c7cd8fbfa980 HTTP/1.1
 
 
 
-DELETE http://localhost:3000/tasks/c5402006-516d-467e-92c1-c1e3c3fb615a HTTP/1.1
+DELETE http://localhost:3000/tasks/5c34d0a5-c1f1-4576-bb6c-32f505e174b3 HTTP/1.1
 
 
-PATCH http://localhost:3000/tasks/629a159e-c108-46fc-9e4a-c65a6bf1e203/status HTTP/1.1
+PATCH http://localhost:3000/tasks/77fa8987-e3e6-4039-be2e-c7cd8fbfa980/status HTTP/1.1
 content-type: application/json
 
 {
