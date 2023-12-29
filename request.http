@@ -56,3 +56,21 @@ content-type: application/json
     "username": "Viserion",
     "password": "Aa1234567"
 }
+
+
+POST http://localhost:3000/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Drogon",
+    "password": "Aa1234567"
+}
+
+POST http://localhost:3000/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Drogon",
+    "password": "Aa1234567"
+}
+
