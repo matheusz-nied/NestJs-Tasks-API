@@ -27,7 +27,7 @@ GET http://localhost:3000/tasks HTTP/1.1
 
 GET http://localhost:3000/tasks?status=DONE HTTP/1.1
 
-GET http://localhost:3000/tasks?search=Go HTTP/1.1
+GET http://localhost:3000/tasks?search=RUST HTTP/1.1
 
 
 GET http://localhost:3000/tasks/77fa8987-e3e6-4039-be2e-c7cd8fbfa980 HTTP/1.1
@@ -43,3 +43,16 @@ content-type: application/json
 {
     "status": "DONE"
   }
+
+
+
+///User
+
+
+POST http://localhost:3000/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Viserion",
+    "password": "Aa1234567"
+}
