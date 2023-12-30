@@ -30,23 +30,6 @@ Durante o curso, adquiri habilidades essenciais para o desenvolvimento de aplica
 - **Segurança e Persistência de Dados:** Implementei práticas de segurança, como hash de senhas, e aprendi a persistir dados de forma eficiente.
 - **GraphQL e MongoDB:** Explorando o uso de GraphQL e persistência de dados com MongoDB.
 
-## Screenshots do projeto
-
-
-### Tela de login
-
-![Logo do Markdown](./front-end//public/login.png)
-
-### Criando uma task
-![Logo do Markdown](./front-end//public/create-task.png)
-
-### Listando tasks
-![Logo do Markdown](./front-end//public/list-tasks.png)
-
-### Filtrando tasks
-![Logo do Markdown](./front-end//public/filter.png)
-
-
 ## Installation
 
 ```bash

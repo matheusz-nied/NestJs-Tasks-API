@@ -1,0 +1,80 @@
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlZpc2VyaW9uIiwiaWF0IjoxNzAzODk0OTY4LCJleHAiOjE3MDM4OTg1Njh9.G-8RVn9RWQshaDeHLCswr4eevhfLmyvhL5jPrNucxLg
+
+{
+    "title": "Learn Go",
+    "description": "reading the books about the Go programming language Golang"
+}
+
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlZpc2VyaW9uIiwiaWF0IjoxNzAzODk0OTY4LCJleHAiOjE3MDM4OTg1Njh9.G-8RVn9RWQshaDeHLCswr4eevhfLmyvhL5jPrNucxLg
+
+{
+    "title": "Learn Rust",
+    "description": "reading the books about the Rust programming language Rust"
+}
+
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Learn Javascript",
+    "description": "reading the books about the Javascript programming"
+}
+
+GET http://localhost:3000/tasks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlZpc2VyaW9uIiwiaWF0IjoxNzAzODk0OTY4LCJleHAiOjE3MDM4OTg1Njh9.G-8RVn9RWQshaDeHLCswr4eevhfLmyvhL5jPrNucxLg
+
+
+GET http://localhost:3000/tasks?status=DONE HTTP/1.1
+
+GET http://localhost:3000/tasks?search=RUST HTTP/1.1
+
+
+GET http://localhost:3000/tasks/e3b1abc0-652f-4831-9e18-e238ad78858a HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRyb2dvbiIsImlhdCI6MTcwMzg5NjgyMCwiZXhwIjoxNzAzOTAwNDIwfQ.Kb397ezV3683VB4JH2TErNphHPb7w9fU0ATsJoNh43U
+
+
+
+DELETE http://localhost:3000/tasks/5c34d0a5-c1f1-4576-bb6c-32f505e174b3 HTTP/1.1
+
+
+PATCH http://localhost:3000/tasks/77fa8987-e3e6-4039-be2e-c7cd8fbfa980/status HTTP/1.1
+content-type: application/json
+
+{
+    "status": "DONE"
+  }
+
+
+
+///User
+
+
+POST http://localhost:3000/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Viserion",
+    "password": "Aa1234567"
+}
+
+
+POST http://localhost:3000/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Drogon",
+    "password": "Aa1234567"
+}
+
+POST http://localhost:3000/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Drogon",
+    "password": "Aa1234567"
+}
+
